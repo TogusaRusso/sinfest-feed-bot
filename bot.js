@@ -6,5 +6,6 @@ const parser = require('./parser')
 const tg = new Telegram(process.env.TOKEN)
 
 parser((url) => {
-  tg.sendPhoto('@' + process.env.CHANNEL, url)
+  console.log(`Sending ${url} to @${process.env.CHANNEL}`)
+  tg.sendPhoto(`@${process.env.CHANNEL}`, url)
 })
