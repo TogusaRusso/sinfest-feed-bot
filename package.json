@@ -1,0 +1,24 @@
+{
+  "name": "sinfest-feed-bot",
+  "version": "1.0.0",
+  "description": "Simple Telegram bot for posting Sinfest webcomic updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TogusaRusso/sinfest-feed-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "sinfest"
+  ],
+  "author": "Dmitry Akentyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TogusaRusso/sinfest-feed-bot/issues"
+  },
+  "homepage": "https://github.com/TogusaRusso/sinfest-feed-bot#readme"
+}
