@@ -24,6 +24,7 @@
   "homepage": "https://github.com/TogusaRusso/sinfest-feed-bot#readme",
   "dependencies": {
     "htmlparser2": "^3.9.2",
+    "mongodb": "^2.2.11",
     "node-telegram-bot-api": "^0.24.0"
   }
 }
