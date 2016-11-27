@@ -29,7 +29,7 @@ function ParseTitlePage (callback) {
   .on('error', (e) => console.error(e))
 }
 
-//Uncomment if want to test this module alone
-//ParseTitlePage((url) => console.log(url))
+// Uncomment if want to test this module alone
+// ParseTitlePage((url) => console.log(url))
 
 module.exports = ParseTitlePage
