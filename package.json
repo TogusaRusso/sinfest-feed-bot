@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/TogusaRusso/sinfest-feed-bot/issues"
   },
-  "homepage": "https://github.com/TogusaRusso/sinfest-feed-bot#readme"
+  "homepage": "https://github.com/TogusaRusso/sinfest-feed-bot#readme",
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  }
 }
