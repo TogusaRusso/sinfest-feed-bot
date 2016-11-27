@@ -3,14 +3,19 @@
 const http = require('http')
 const htmlparser = require('htmlparser2')
 
-function ParseTitlePage () {
+const hostname = 'www.sinfest.net'
+
+function ParseTitlePage (callback) {
   const parser = new htmlparser.Parser({
     onopentag: (name, attr) => {
-      if (name === 'img') console.log(attr.src)
+      if (name === 'img' && attr.src.indexOf('btphp') !== -1) {
+        console.log(`Parsed url: ${attr.src}`)
+        callback(hostname + '/' + attr.src)
+      }
     }
   }, {decodeEntities: true})
   const options = {
-    hostname: 'www.sinfest.net',
+    hostname: hostname,
     path: '/index.php',
     method: 'GET',
     headers: {
@@ -24,5 +29,7 @@ function ParseTitlePage () {
   .on('error', (e) => console.error(e))
 }
 
-ParseTitlePage()
+//Uncomment if want to test this module alone
+//ParseTitlePage((url) => console.log(url))
+
 module.exports = ParseTitlePage
